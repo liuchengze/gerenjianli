@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.arrow{
+    width: 1.52rem;
+    height: 1.32rem;
+    background: url("../img/huaping.png") no-repeat;
+    background-size: 1.52rem 1.32rem;
+    position: fixed;
+    bottom: 0.5rem;
+    left: 45%;
+    z-index: 9999;
+}
+.music{
+    width: 0.88rem;
+    height: 0.88rem;
+    background: url("../img/music.png") no-repeat;
+    background-size: 0.88rem 0.88rem;
+    display: block;
+    position: fixed;
+    right: 0.2rem;
+    top: 0.2rem;
+    z-index: 999;
+}
+@keyframes rotateMusic {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+.rotateMusic{
+    animation: rotateMusic 1.5s linear infinite;
+}
+.arrowMove{
+    animation: arrowMove 1s linear infinite;
+}
+@keyframes arrowMove {
+
+    0%{transform: translateY(0);opacity: 1;}
+    100%{transform: translateY(-0.2rem);opacity: 0;}
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.swiper-container{
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide{
+    position: relative;
+}
+.page1{
+   background: url("../img/bg1.jpg") center center;
+    background-size:180% 100% ;
+}
+.page1 img{
+    width: 3.92rem;
+    height: 3.67em;
+    position: absolute;
+    top: 7.5rem;
+    left: 3rem;
+}
+.page2{
+    background: url("../img/bg2.jpg") center center;
+    background-size:180% 100% ;
+}
+.page2 h2{
+    color: rgb(84, 84, 84);
+    font-size: 0.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    font-style: normal;
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+}
+.page2 img{
+    width: 4em;
+    height: 4em;
+    margin-top: 4.5rem;
+    margin-left: 1rem;
+}
+.page2 .txt{
+    width: 100%;
+    height: auto;
+    line-height: 1.5;
+    color: rgb(144, 144, 144);
+    font-size: 18px;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+}
+.page2 .ce{
+    width: 0.5rem;
+    height: 100%;
+    color: rgb(165, 167, 168);
+    font-size: 0.7rem;
+    text-align: center;
+    line-height: 1rem;
+    position: absolute;
+    right: 0.5rem;
+    top: -1.5rem;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+.page3{
+    background: url("../img/bg2.jpg") center center;
+    background-size:180% 100% ;
+}
+.page3 h2{
+    font-size: 0.6rem;
+    color: rgb(84, 84, 84);
+    font-weight: normal;
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+}
+.page3 .box{
+    background: url("../img/guan.png") no-repeat;
+    background-size: 90% 100%;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    position: relative;
+}
+.page3 span{
+    color: rgb(144, 144, 144);
+    font-size: 0.5rem;
+    padding-left: 0.4rem;
+}
+.page3 .dian{
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+}
+.page3 .box:nth-of-type(1) .dian{
+    right: 2rem;
+    top: 0.4rem;
+}
+.page3 .box:nth-of-type(2) .dian{
+    right: 3.5rem;
+    top: 0.5rem;
+}
+.page3 .box:nth-of-type(3) .dian{
+    right: 2.5rem;
+    top: 0.5rem;
+}
+.page3 .box:nth-of-type(4) .dian{
+    right: 2rem;
+    top: 0.5rem;
+}
+.page4{
+    background: url("../img/bg2.jpg") center center;
+    background-size:180% 100% ;
+}
+.page4 a img{
+    width: 3.2rem;
+    height: 5.62rem;
+}
+.page4 h2{
+    font-size: 20px;
+    color: rgb(84, 84, 84);
+    font-weight: normal;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.page4 a:nth-of-type(1){
+    display: block;
+    margin-top: 2rem;
+    margin-left: 6rem;
+}
+.page4 a:nth-of-type(2){
+    display: block;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.page4 p:nth-of-type(1){
+    position: absolute;
+    top: 6rem;
+    left: 1.8rem;
+    font-size: 0.8rem;
+    color: darkorange;
+}
+.page4 p:nth-of-type(2){
+    position: absolute;
+    bottom: 3rem;
+    left: 5.5rem;
+    font-size: 0.8rem;
+    color: #0066bb;
+}
+.page5{
+    background: url("../img/bg1.jpg") center center;
+    background-size:180% 100% ;
+}
+.page5 h2{
+    font-size: 0.8rem;
+    color: rgb(84, 84, 84);
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.pic1{
+    margin-top: 2.5rem;
+     width: 3.12rem;
+     height: 3.12rem;
+    margin-left: 3.5rem;
+    display: block;
+ }
+.pic2{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.8rem;
+    margin-left: 4.2rem;
+}
